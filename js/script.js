@@ -1,4 +1,4 @@
-const animals = [
+const icons = [
   {
     name: "cat",
     prefix: "fa-",
@@ -115,7 +115,12 @@ const animals = [
 
 // Milestone 1
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
-
+const iconBoxes = icons.map((element) => {
+  let card = document.createElement("div");
+  card.innerHTML = `<i class="${element.family} ${element.prefix}${element.name}"></i> <h3>${element.name}</h3>`;
+  document.querySelector(".container").append(card);
+  card.classList.add("icon-box");
+});
 // Milestone 2
 // Ciascuna icona ha una proprietà "color": utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
 
