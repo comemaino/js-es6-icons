@@ -117,7 +117,7 @@ const icons = [
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
 const iconBoxes = icons.map((element) => {
   let card = document.createElement("div");
-  card.innerHTML = `<i class="${element.family} ${element.prefix}${element.name}"></i> <h3>${element.name}</h3>`;
+  card.innerHTML = `<i class="${element.family} ${element.prefix}${element.name} ${element.color}"></i> <h3>${element.name}</h3>`;
   document.querySelector(".container").append(card);
   card.classList.add("icon-box");
 });

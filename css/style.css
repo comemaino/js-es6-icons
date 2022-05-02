@@ -21,3 +21,15 @@
   display: inline-block;
   flex-grow: 1;
 }
+
+.orange {
+  color: orange;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
